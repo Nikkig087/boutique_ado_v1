@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth.account', # basic log in and out, password reset
      'allauth.socialaccount', # login using social mediea
     "home",
+    "products",
 ]
 
 MIDDLEWARE = [
@@ -146,6 +147,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
+# we need the following to set up the css
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
